@@ -12,7 +12,9 @@ body {
   font-variation-settings: "slnt" 0;
   color: white;
 }
-
+p {
+  color: rgba(255, 255, 255, 0.65);
+}
 header {
   background: linear-gradient(
     360deg,
@@ -79,7 +81,7 @@ header {
 /* home page part  */
 
 .header {
-  margin: 200px 190px;
+  margin: 200px 190px 0px 190px;
   display: flex;
   justify-content: space-between;
 }
@@ -148,7 +150,8 @@ header {
   padding-bottom: 5px;
 }
 .img-text1 p {
-    color: rgba(255, 255, 255, 0.65);}
+  color: rgba(255, 255, 255, 0.65);
+}
 .img-text2 {
   display: flex;
   justify-content: center;
@@ -171,7 +174,8 @@ header {
   border-radius: 50px;
 }
 .img-text2 p {
-    color: rgba(255, 255, 255, 0.65);}
+  color: rgba(255, 255, 255, 0.65);
+}
 
 @media screen and (max-width: 576px) {
   .header {
@@ -184,13 +188,13 @@ header {
     height: 335px;
   }
   .title p {
-  font-size: 13px;}
-  
+    font-size: 13px;
+  }
+
   .joinclub {
     width: 160px;
     height: 50px;
     margin-right: 5px;
-
   }
   .downloadapp {
     width: 160px;
@@ -224,15 +228,14 @@ header {
     position: absolute;
     top: 1150px;
     right: 240px;
-    gap:7px;
+    gap: 7px;
   }
   .play img {
-  width: 30px;
-  border-radius: 50px;
-  margin-top: 7px;
-  
-}
-.img-text2 h1 {
+    width: 30px;
+    border-radius: 50px;
+    margin-top: 7px;
+  }
+  .img-text2 h1 {
     font-size: 22px;
     font-weight: 900;
   }
@@ -241,5 +244,67 @@ header {
     font-size: 12px;
     font-weight: 400;
     line-height: 15.12px;
+  }
+}
+
+/* first-section */
+
+.first-section {
+  width: 100%;
+  height: 452px;
+}
+.parent {
+  margin: 58px 190px;
+}
+.title-part {
+  margin: 58px auto;
+  text-align: center;
+}
+.title-part h1 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  padding-bottom: 12px;
+}
+.title-part p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-box {
+  width: 231px;
+  height: 274px;
+  text-align: center;
+}
+.card-box img {
+  border-radius: 100px;
+}
+.card-box h3 {
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.card-box p {
+  padding-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@media screen and (max-width: 576px) {
+  .card-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .parent {
+    margin: 58px 20px;
+  }
+  .card-box {
+    margin: 20px auto;
   }
 }
