@@ -353,10 +353,11 @@ header {
 @media screen and (max-width: 576px) {
   .second-section {
     margin: 20px;
+    width: 90%;
     height: 100%;
   }
   .father {
-    width: 353px;
+    width: 350px;
     height: 531px;
     flex-direction: column;
     gap: 20px;
@@ -460,7 +461,7 @@ header {
   .team-info {
     flex-direction: column;
     width: 323px;
-    margin: 20px 43.5px;
+    margin: 20px 0px 20px 31px;
   }
   .team-info .row {
     width: 313px;
