@@ -297,17 +297,101 @@ header {
 }
 
 @media screen and (max-width: 576px) {
+  .first-section {
+    height: 100%;
+  }
   .card-container {
     flex-direction: column;
     justify-content: center;
-  }
-  .parent {
-    margin: 58px 20px;
   }
   .card-box {
     margin: 20px auto;
   }
   .card-box img {
-  border-radius: 100px;
+    border-radius: 100px;
+  }
 }
+
+/* second-section */
+.second-section {
+  width: 100%;
+  height: 371px;
+  margin-bottom: 70px;
 }
+.father {
+  display: flex;
+  justify-content: space-between;
+  margin: 58px 190px;
+  background-color: rgba(34, 34, 34, 0.637);
+  border-radius: 18px;
+}
+.first-box {
+  width: 443px;
+  height: 116px;
+  margin: 41px 54px;
+}
+.first-box h1 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  padding-bottom: 14px;
+}
+.first-box p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 34px;
+}
+
+.second-box img {
+  width: 366px;
+  height: 312px;
+  border-radius: 18px;
+  margin: 32px 30px;
+}
+@media screen and (max-width: 576px) {
+  .second-section{
+    margin: 20px;
+  }
+  .father {
+    width: 353px;
+    height: 531px;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 20px;
+  }
+  .first-box {
+    width: 287px;
+    height: 76px;
+    margin: 41px 24px;
+  }
+  .first-box h1 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 120%;
+    padding-bottom: 14px;
+  }
+  .first-box p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 34px;
+  }
+
+  .second-box img {
+    width: 287px;
+    height: 170px;
+    
+  }
+  .first-box .joinclub {
+    text-align: center;
+    width: 287px;
+    height: 54px;
+    margin-left: 10px;
+    
+  }
+}
+ /* Bmi calculator  */
+
+ /* Our team part  */
+ 
