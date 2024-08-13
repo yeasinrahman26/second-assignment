@@ -348,10 +348,12 @@ header {
   height: 312px;
   border-radius: 18px;
   margin: 32px 30px;
+  object-fit: cover;
 }
 @media screen and (max-width: 576px) {
-  .second-section{
+  .second-section {
     margin: 20px;
+    height: 100%;
   }
   .father {
     width: 353px;
@@ -381,17 +383,108 @@ header {
   .second-box img {
     width: 287px;
     height: 170px;
-    
+    object-fit: cover;
   }
   .first-box .joinclub {
     text-align: center;
     width: 287px;
     height: 54px;
-    margin-left: 10px;
-    
+    margin-left: 6px;
   }
 }
- /* Bmi calculator  */
+/* Bmi calculator  */
 
- /* Our team part  */
- 
+/* Our team part  */
+.third-section {
+  width: 100%;
+  /* background-color: red; */
+}
+.team {
+  text-align: center;
+}
+.team h1 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  padding-bottom: 15px;
+}
+.team p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.team-info {
+  background-color: rgba(34, 34, 34, 0.637);
+  margin: 58px 190px;
+  border-radius: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 20px;
+}
+.team-info .row {
+  width: 437px;
+  height: 372px;
+  border-radius: 18px;
+  background-size: 100%;
+  margin: 20px;
+}
+#row6{
+     background-size: 100% 100% ;
+  
+}
+#row4{
+     background-size: 100% 100%;
+  }
+.row h2 {
+  margin-top: 290px;
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 24px;
+}
+.row p {
+  padding-top: 10px;
+  margin-left: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 25px;
+}
+@media screen and (max-width: 576px) {
+  .third-section {
+    height: 100%;
+  }
+  .team-info {
+    flex-direction: column;
+    width: 323px;
+    margin: 20px 43.5px;
+  }
+  .team-info .row {
+    width: 313px;
+    height: 272px;
+    border-radius: 18px;
+    background-size: 100%;
+    margin: 0px;
+  }
+  #row4{
+     background-size: 100% 100%;
+  }
+  .row h2 {
+  margin-top: 200px;
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 24px;
+}
+.row p {
+  padding-top: 0px;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+}
+}
