@@ -307,4 +307,7 @@ header {
   .card-box {
     margin: 20px auto;
   }
+  .card-box img {
+  border-radius: 100px;
+}
 }
