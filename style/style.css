@@ -311,6 +311,56 @@ header {
     border-radius: 100px;
   }
 }
+/* challange part  */
+.challange{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.intro{
+  text-align: center;
+  padding: 20px 0px;
+  
+}
+.intro h1 {
+  font-size:48px;
+  font-weight:900;
+  line-height:120%;
+  padding-bottom: 12px;
+}
+.video {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 576px) {
+  .challange {
+    max-width: 453px;
+  }
+  .video >iframe {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px auto;
+  }
+  .intro h1 {
+  font-size:38px;
+  font-weight:800;
+  line-height:120%;
+  padding-bottom: 12px;
+}
+.intro p {
+  padding-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+}
+
+
+
+
 
 /* second-section */
 .second-section {
