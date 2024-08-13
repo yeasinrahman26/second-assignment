@@ -282,6 +282,7 @@ header {
 }
 .card-box img {
   border-radius: 100px;
+  border: 4px solid rgba(255, 255, 255, 0.13);
 }
 .card-box h3 {
   padding-top: 30px;
@@ -481,11 +482,22 @@ header {
   background-size: 100%;
   margin: 20px;
 }
+#row1
+{background-image: url(../images/trainer1.png);}
+#row2
+{background-image: url(../images/trainer2.png);
+background-size: 100% 100%;}
+#row3
+{background-image: url(../images/trainer3.png);}
+
 #row6 {
   background-size: 100% 100%;
+  background-image: url(../images/trainer4.png);
 }
+#row5{background-image: url(../images/trainer5.png);}
 #row4 {
   background-size: 100% 100%;
+   background-image: url(../images/trainer6.png);
 }
 .row h2 {
   margin-top: 290px;
