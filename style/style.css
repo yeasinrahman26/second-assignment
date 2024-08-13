@@ -71,7 +71,7 @@ header {
     font-weight: 800;
   }
   .navbar {
-    margin: 20px;
+    margin: 0px 20px;
   }
   .navbar > .nav-button {
     display: none;
