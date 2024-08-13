@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-*{
-    margin: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0px;
 }
 body {
   background-color: black;
@@ -18,6 +19,7 @@ header {
     rgb(17, 17, 17),
     rgba(119, 119, 119, 0) 100%
   );
+  width: 100%;
 }
 
 .navbar .brand {
@@ -30,13 +32,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 57px 190px;
+  margin: 0px 190px;
+  padding-top: 57px;
 }
 .navbar > .nav-button {
   display: flex;
-  padding: 0px;
+  padding: 5px 0px;
   align-items: center;
-  gap: 47px;
+  gap: 50px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 46px;
 }
@@ -45,12 +48,195 @@ header {
   padding: none;
   font-size: 18px;
   font-weight: 400;
-  padding-right: 19px;
+  padding-right: 25px;
 }
 .home {
   background-color: rgb(230, 83, 60);
-  border: 10px solid rgb(230, 83, 60);
+  border: 4px solid rgb(230, 83, 60);
   border-radius: 46px;
-  padding: 8px 20px;
+  padding: 3px 20px;
+  margin-left: 5px;
   text-align: center;
+}
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .menu-icon {
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+  }
+  .navbar {
+    margin: 20px;
+  }
+  .navbar > .nav-button {
+    display: none;
+  }
+}
+
+/* home page part  */
+
+.header {
+  margin: 200px 190px;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  width: 520px;
+  height: 282px;
+}
+.title h1 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 78px;
+  font-weight: 900;
+  line-height: 120%;
+}
+.title h1 span {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 100;
+  font-style: italic;
+}
+.title p {
+  margin: 28px 0px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.joinclub {
+  width: 224px;
+  height: 54px;
+  border-radius: 42px;
+  background-color: rgb(230, 83, 60);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  border-style: none;
+}
+.downloadapp {
+  width: 224px;
+  height: 54px;
+  margin-left: 10px;
+  border-radius: 42px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  border: 1px solid white;
+}
+
+.img-text1 {
+  width: 193px;
+  height: 98px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  position: absolute;
+  top: 440px;
+  right: 120px;
+}
+.img-text1 h1 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.img-text1 p {
+    color: rgba(255, 255, 255, 0.65);}
+.img-text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 193px;
+  height: 98px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  /* text-align: center; */
+  position: absolute;
+  top: 720px;
+  right: 450px;
+}
+.play img {
+  width: 50px;
+  border-radius: 50px;
+}
+.img-text2 p {
+    color: rgba(255, 255, 255, 0.65);}
+
+@media screen and (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .title {
+    width: 352px;
+    height: 335px;
+  }
+  .joinclub {
+    width: 160px;
+    height: 50px;
+    margin-right: 5px;
+    margin-left: ;
+  }
+  .downloadapp {
+    width: 160px;
+    height: 50px;
+    margin: 0px;
+  }
+  .poster {
+    margin-top: 400px;
+  }
+  .img-text1 {
+    width: 146px;
+    height: 75px;
+    position: absolute;
+    top: 940px;
+    right: 20px;
+  }
+  .img-text1 h1 {
+    font-size: 30.24px;
+    font-weight: 900;
+    padding-top: 10px;
+  }
+  .img-text1 p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.12px;
+  }
+  .img-text2 {
+    width: 146px;
+    height: 75px;
+    position: absolute;
+    top: 1150px;
+    right: 240px;
+    gap:7px;
+  }
+  .play img {
+  width: 30px;
+  border-radius: 50px;
+  margin-top: 7px;
+  
+}
+.img-text2 h1 {
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .img-text2 p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.12px;
+  }
 }
