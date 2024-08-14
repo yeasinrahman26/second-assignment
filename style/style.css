@@ -313,7 +313,7 @@ header {
   }
 }
 /* challange part  */
-.challange{
+.challange {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -321,15 +321,14 @@ header {
   align-items: center;
   margin-top: 50px;
 }
-.intro{
+.intro {
   text-align: center;
   padding: 20px 0px;
-  
 }
 .intro h1 {
-  font-size:48px;
-  font-weight:900;
-  line-height:120%;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
   padding-bottom: 12px;
 }
 .video {
@@ -340,28 +339,24 @@ header {
   .challange {
     max-width: 453px;
   }
-  .video >iframe {
+  .video > iframe {
     width: 90%;
     margin: 20px auto;
     padding: 20px auto;
   }
   .intro h1 {
-  font-size:38px;
-  font-weight:800;
-  line-height:120%;
-  padding-bottom: 12px;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 120%;
+    padding-bottom: 12px;
+  }
+  .intro p {
+    padding-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+  }
 }
-.intro p {
-  padding-top: 10px;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 18px;
-}
-}
-
-
-
-
 
 /* second-section */
 .second-section {
@@ -445,6 +440,107 @@ header {
   }
 }
 /* Bmi calculator  */
+.calculator {
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.637);
+}
+.calculator-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 58px 190px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+caption {
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 5px;
+  padding: 4px;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 120%;
+}
+table {
+  border-collapse: collapse;
+  text-align: left;
+  margin: 30px auto;
+}
+
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.315);
+  padding: 15px 30px;
+
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+th {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.cal {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  width: 577px;
+  height: 386px;
+}
+.cal > h1 {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 120%;
+}
+fieldset {
+  border: 0px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px;
+  margin-bottom: 10px;
+}
+#factor {
+  grid-column: span 2;
+}
+fieldset > input,
+select {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: none;
+  color: rgba(128, 122, 122, 0.897);
+}
+
+option {
+  color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.form > .joinclub {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .calculator-container {
+    flex-direction: column;
+    margin: 58px 0px;
+  }
+  .cal {
+    width: 354px;
+    height: 395px;
+  }
+  fieldset > input,
+select {
+  padding: 10px 5px;
+  
+}
+}
 
 /* Our team part  */
 .third-section {
@@ -482,22 +578,27 @@ header {
   background-size: 100%;
   margin: 20px;
 }
-#row1
-{background-image: url(../images/trainer1.png);}
-#row2
-{background-image: url(../images/trainer2.png);
-background-size: 100% 100%;}
-#row3
-{background-image: url(../images/trainer3.png);}
+#row1 {
+  background-image: url(../images/trainer1.png);
+}
+#row2 {
+  background-image: url(../images/trainer2.png);
+  background-size: 100% 100%;
+}
+#row3 {
+  background-image: url(../images/trainer3.png);
+}
 
 #row6 {
   background-size: 100% 100%;
   background-image: url(../images/trainer4.png);
 }
-#row5{background-image: url(../images/trainer5.png);}
+#row5 {
+  background-image: url(../images/trainer5.png);
+}
 #row4 {
   background-size: 100% 100%;
-   background-image: url(../images/trainer6.png);
+  background-image: url(../images/trainer6.png);
 }
 .row h2 {
   margin-top: 290px;
@@ -600,26 +701,26 @@ footer > p {
     height: 100%;
     margin: 0px;
   }
-  .footer-container{
-    grid-template-columns: repeat(1,1fr);
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
     gap: 15px;
     padding: 30px 20px;
   }
   .footer-box1 > p {
-  height: 72px;
-  width: 100%;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-top: 10px;
-  padding-bottom: 10px;
-}
-footer > p {
-  text-align: center;
-  font-size: 20px;
-  border-top: 2px solid rgba(255, 255, 255, 0.1);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 20px 20px 0px 20px ;
-}
+    height: 72px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+  footer > p {
+    text-align: center;
+    font-size: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px 20px 0px 20px;
+  }
 }
