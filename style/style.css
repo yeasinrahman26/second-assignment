@@ -212,8 +212,8 @@ header {
     width: 146px;
     height: 75px;
     position: absolute;
-    top: 940px;
-    right: 20px;
+    top: 950px;
+    right: 70px;
   }
   .img-text1 h1 {
     font-size: 30.24px;
@@ -304,6 +304,9 @@ header {
 @media screen and (max-width: 576px) {
   .first-section {
     height: 100%;
+  }
+  .title-part p{
+    margin: 0px 15px;
   }
   .card-container {
     flex-direction: column;
