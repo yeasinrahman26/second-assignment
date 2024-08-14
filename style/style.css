@@ -70,11 +70,15 @@ header {
     font-size: 36px;
     font-weight: 800;
   }
+  
   .navbar {
     margin: 0px 20px;
   }
   .navbar > .nav-button {
     display: none;
+  }
+  .navbar .brand {
+    margin-top: 14px;
   }
 }
 
